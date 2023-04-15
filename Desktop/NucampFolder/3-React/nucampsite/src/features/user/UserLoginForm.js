@@ -18,7 +18,7 @@ const UserLoginForm = () => {
     const currentUser = useSelector(selectCurrentUser);
     const dispatch = useDispatch();
     const handleLogin = (values) => {
-        currentUser = {
+        const currentUser = {
             id: Date.now(),
             avatar: defaultAvatar,
             username: values.username,
